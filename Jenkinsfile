@@ -30,7 +30,7 @@ pipeline
                 sh 'ssh ubuntu@172.31.27.163 sudo docker tag my_project:latest raju2128/my_project:latest'
                 sh 'ssh ubuntu@172.31.27.163 sudo docker push raju2128/my_project:latest'
                 sh 'ssh ubuntu@172.31.27.163 sudo docker system prune -af'
-		sh 'ssh ubuntu@172.31.27.163 sudo docker run --name t1 -p 9090:8080 -d raju2128/my_project:latest
+		sh 'ssh ubuntu@172.31.27.163 sudo docker run --name t1 -p 9090:8080 -d raju2128/my_project:latest'
             }
         }
         stage('Continuous_delvery')
